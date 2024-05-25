@@ -298,7 +298,7 @@ An equilibrium is an allocation $\{C_{t+s},N_{t+s},Y_{t+s},B_{t+s}\}_{s=0}^{\inf
 				\item Now we move along using the chain rule:
 				\begin{align*}
 					\frac{\partial \mathbf{Y}}{\partial \mathbf{U}} = \begin{pmatrix}
-						\frac{\partial \mathbf{c}}{\partial \mathbf{U}} \\
+						\frac{\partial \mathbf{\hat{c}}}{\partial \mathbf{U}} \\
 						\frac{\partial (\mathbf{\hat{y}},\mathbf{(\hat{w}-\hat{p})})}{\partial \mathbf{U}}\\
 					\end{pmatrix} \\
 				\end{align*}
@@ -909,7 +909,7 @@ An equilibrium is an allocation $\{C_{t+s},N_{t+s},Y_{t+s},B_{t+s}\}_{s=0}^{\inf
 				\Phi_{eul,rk} &= (1-\beta(1-\delta))I_T & \Phi_{eul,c} &= -\gamma I_T 
 			\end{align*}
 			\item  $I_T$ is the $T\times T$ identity matrix. 
-			\item Note timing of $\mathbf{\hat{r}^k}=\{\hat{r}_{t+1},...,\hat{r}_{T+1}\}$ sequence.
+			\item Note timing of $\mathbf{\hat{r}^k}=\{\hat{r}^{k}_{t+1},...,\hat{r}^{k}_{T+1}\}$ sequence.
 			% \item Can start with a guess $(\mathbf{\hat{k}},\mathbf{\hat{n}})$ and iterate until we get zeros. This means all markets clear and everyone optimizes.
 			% \item A smarter way of solving is the chain rule.
 		\end{itemize}
@@ -1084,7 +1084,7 @@ An equilibrium is an allocation $\{C_{t+s},N_{t+s},Y_{t+s},B_{t+s}\}_{s=0}^{\inf
 			\end{align*}
 			\item From the household block we have:
 			\begin{align*}
-				\frac{\partial (\mathbf{\hat{c}},\mathbf{\iota})}{\partial \mathbf{U}} &= \begin{pmatrix}
+				\frac{\partial (\mathbf{\hat{c}},\mathbf{\hat{\iota}})}{\partial \mathbf{U}} &= \begin{pmatrix}
 					\Phi_{c,wp}\frac{\partial\mathbf{\hat{w}-\hat{p}}}{\partial \mathbf{\hat{k}} } & \Phi_{c,n} + \Phi_{c,wp}\frac{d\mathbf{\hat{w}-\hat{p}}}{\partial \mathbf{\hat{n}} } \\
 					\Phi_{\iota,k} & \mathbf{0} \\
 				\end{pmatrix} \\
@@ -1136,7 +1136,7 @@ An equilibrium is an allocation $\{C_{t+s},N_{t+s},Y_{t+s},B_{t+s}\}_{s=0}^{\inf
 			\end{align*}
 			\item From the household block we have:
 			\begin{align*}
-				\frac{\partial (\mathbf{\hat{c}},\mathbf{\iota})}{\partial \mathbf{U}} &= \begin{pmatrix}
+				\frac{\partial (\mathbf{\hat{c}},\mathbf{\hat{\iota}})}{\partial \mathbf{U}} &= \begin{pmatrix}
 					\Phi_{c,wp}\frac{\partial\mathbf{\hat{w}-\hat{p}}}{\partial \mathbf{\hat{a}} } \\ \mathbf{0} 
 				\end{pmatrix} = \begin{pmatrix}
 					\Phi_{c,wp} \\ \mathbf{0} 
