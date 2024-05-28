@@ -1,0 +1,124 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,hyperref,array,xcolor,multicol,verbatim,mathpazo}
+\usepackage[normalem]{ulem}
+\usepackage[pdftex]{graphicx}
+\usepackage{fullpage}
+
+\usepackage{threeparttable}
+\usepackage{geometry}
+\usepackage[format=hang,font=normalsize,labelfont=bf]{caption}
+\usepackage{lscape}
+\usepackage{natbib}
+\usepackage{setspace}
+\usepackage{float,color}
+\usepackage[pdftex]{graphicx}
+\usepackage{pdfsync}
+\usepackage{placeins}
+\usepackage{geometry}
+\usepackage{pdflscape}
+\usepackage[normalem]{ulem}
+\usepackage{threeparttable, multirow}
+\useunder{\uline}{\ul}{}
+\synctex=1
+\usepackage{hyperref}
+\hypersetup{colorlinks,linkcolor=red,urlcolor=blue,citecolor=blue}
+\usepackage{bm}
+
+
+\newcommand{\E}{\mathbb{E}}
+
+% Identifying information
+\title{
+Homework 3
+} 
+\author{Linghui Wu}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\textbf{(a)} The firm is on the labor demand curve because the real wage is equal to the marginal productivity of labor 
+\begin{equation}
+\label{eq:labor_demand}
+\frac{W_{1}}{P_{1}} = \frac{W_{0}}{P_{1}} = A_{1} = MPL_{1}.
+\end{equation}
+
+\textbf{(b)} The household is not on the labor demand curve because the labor-leisure condition does not hold in the short run when the wage is sticky
+\begin{equation}
+\label{eq:labor_supply}
+\frac{W_{1}}{P_{1}} = \frac{W_{0}}{P_{1}} \neq \frac{\chi N^{\varphi}_{1}}{C^{-\gamma}_{1}}.
+\end{equation}
+
+\textbf{(c)} At $t=1$ with $W_{0}=W_{1}$, the firm adjusts labor demand $N^{d}$ s.t. equation (\ref{eq:labor_demand}) holds. 
+The household is not on the labor supply curve and works as many hours as needed to produce the required output $Y_{1}$.
+
+\textbf{(d)} In the long-run ($t \geq 2$), we have the following characterizations,
+\begin{align*}
+Y &= AN \\
+\frac{W}{P} &= A \\
+\frac{W}{P} &= \frac{\chi N^{\varphi}}{C^{-\gamma}} \\
+Y &= C \\
+\frac{M}{P} &= \zeta^{\frac{1}{\nu}}(1-\frac{1}{Q})^{-\frac{1}{\nu}}C^{\frac{\gamma}{\nu}} \\
+1 &= \beta \frac{Q}{\pi}
+\end{align*}
+where $\pi$ denotes the steady-state inflation rate.
+We can then solve for steady state,
+\begin{align*}
+C &= \left(\frac{A^{\varphi+1}}{\chi}\right)^{\frac{1}{\varphi+\gamma}} \\
+Y &= C \\
+\frac{W}{P} &= A \\
+N &= \left(\frac{A^{1-\gamma}}{\chi}\right)^{\frac{1}{\varphi+\gamma}} \\
+Q &= \frac{\pi}{\beta} \\
+\frac{M}{P} &= \zeta^{\frac{1}{\nu}}(1-\frac{1}{Q})^{-\frac{1}{\nu}}C^{\frac{\gamma}{\nu}}
+\end{align*}
+
+\textbf{(e)} By part (d), we can see that the Classical Dichotomy holds in the long run because the real variables $Y$, $C$, $N$ and $\frac{W}{P}$ are independent of money supply $M$ and nominal interest rate $Q$.
+
+\textbf{(f)} In the short-run, we have 
+\begin{align*}
+Y_{1} &= A_{1}N_{1} \\
+W_{1} &= W_{0} \\
+\frac{W_{1}}{P_{1}} &= A_{1} \\
+Y_{1} &= C_{1} \\
+\frac{M_{1}}{P_{1}} &= \zeta^{\frac{1}{\nu}}\left(1-\frac{1}{Q_{1}}\right)^{-\frac{1}{\nu}}C^{\frac{\gamma}{\nu}}_{1} \\
+1 &= \beta Q_{1} \frac{P_{1}}{P} \left(\frac{C}{C_{1}}\right)^{-\gamma}
+\end{align*}
+where $P$ and $C$ are steady-state price levels and consumption.
+
+Plugging $P_{1}=\frac{W_{1}}{A_{1}}$, the following system of two equations pins down $C_{1}$ and $Q_{1}$ which are required for the output and money markets clearing.
+\begin{align}
+\label{eq:money_demand}
+\frac{M_{1}A_{1}}{W_{1}} &= \zeta^{\frac{1}{\nu}}\left(1-\frac{1}{Q_{1}}\right)^{-\frac{1}{\nu}}C^{\frac{\gamma}{\nu}}_{1} \\
+\label{eq:euler_eq}
+1 &= \beta Q_{1} \frac{W_{1}}{PA_{1}} \left(\frac{C}{C_{1}}\right)^{-\gamma}
+\end{align}
+
+\textbf{(g)} Part (f) suggests that the Classical Dichotomy does not hold in the short-run because the sticky wage assumption replaces the household's labor supply curve and short-term consumption is affected by nominal interest rate.
+
+\textbf{(h)} When money supply $M_{1}$ increases, the price of money $Q_{1}$ falls. 
+Equation (\ref{eq:euler_eq}) suggests that real interest rate drops, 
+and the household then increases today's consumption relative to future consumption through intertemporal substitution. 
+So there is an overall increase in consumption today, 
+which is accommodated by the household working extra hours to produce more output.
+
+\textbf{(i)} In the long run, an increase in productivity leads to increases in 
+real wage according to part (d).
+
+In the short-run where the wage is sticky, higher productivity results in an increase in the marginal productivity of labor, and the firm will demand less labor $N^{d}$. 
+Changes in $A_{1}$ do not affect the real output and money market.  
+
+\textbf{(j)} The labor wedge at $t=1$ is
+\begin{align*}
+1-\tau^{N}_{1} &= \frac{MRS_{1}}{MPL_{1}} = \chi A^{\gamma-1}_{1}N^{\gamma+\varphi}_{1}
+\end{align*}
+In a recession, $N_{1}$ is low and $\tau^{N}_{1}$ is high.
+So the labor wedge is countercyclical in the sticky wage model.
+
+\textbf{(k)} We can use data on unemployment and labor share of income as a proxy for marginal productivity of labor to distinguish the predictions of sticky price and sticky wage model.
+
+\end{document}
+
+
